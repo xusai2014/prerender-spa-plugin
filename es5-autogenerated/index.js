@@ -69,9 +69,15 @@ PrerenderSPAPlugin.prototype.apply = function (compiler) {
   // From https://github.com/ahmadnassri/mkdirp-promise/blob/master/lib/index.js
   var mkdirp = function mkdirp(dir, opts) {
     return new Promise(function (resolve, reject) {
-      compilerFS.mkdirp(dir, opts, function (err, made) {
-        return err === null ? resolve(made) : reject(err);
-      });
+      try {
+        compilerFS.mkdirp(dir, opts, function (err, made) {
+          return err === null ? resolve(made) : reject(err);
+        });
+      } catch (e) {
+        compilerFS.mkdir(dir, opts, function (err, made) {
+          return err === null ? resolve(made) : reject(err);
+        });
+      }
     });
   };
 

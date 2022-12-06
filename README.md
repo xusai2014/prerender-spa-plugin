@@ -47,7 +47,7 @@ Framework-specific examples can be found in the `examples/` directory.
 ### Basic Usage (`webpack.config.js`)
 ```js
 const path = require('path')
-const PrerenderSPAPlugin = require('prerender-spa-plugin')
+const PrerenderSPAPlugin = require('@perfe/prerender')
 
 module.exports = {
   plugins: [
@@ -66,7 +66,7 @@ module.exports = {
 
 ```js
 const path = require('path')
-const PrerenderSPAPlugin = require('prerender-spa-plugin')
+const PrerenderSPAPlugin = require('@perfe/prerender')
 const Renderer = PrerenderSPAPlugin.PuppeteerRenderer
 
 module.exports = {
@@ -170,7 +170,7 @@ If you use this format, you will be greeted with a warning prompting you to migr
 
 ```js
 const path = require('path')
-const PrerenderSPAPlugin = require('prerender-spa-plugin')
+const PrerenderSPAPlugin = require('@perfe/prerender')
 
 module.exports = {
 

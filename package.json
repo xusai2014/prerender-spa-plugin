@@ -1,6 +1,6 @@
 {
-  "name": "prerender-spa-plugin",
-  "version": "3.4.0",
+  "name": "@perfe/prerender",
+  "version": "1.0.1",
   "description": "Flexible, framework-agnostic static site generation for sites and SPAs built with webpack.",
   "license": "MIT",
   "main": "index.js",
@@ -19,9 +19,8 @@
     "serverside-rendering"
   ],
   "author": {
-    "name": "Chris Fritz",
-    "email": "chrisvfritz@gmail.com",
-    "url": "https://twitter.com/chrisvfritz"
+    "name": "Jerry xu",
+    "email": "jerryxu521@gmail.com",
   },
   "contributors": [
     {
